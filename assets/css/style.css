@@ -1,0 +1,116 @@
+:root {
+  --yellow: #efa00b;
+  --blue: #1c3144;
+}
+
+* {
+  min-width: 0;
+  font: inherit;
+  color: var(--blue);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+header > h1 {
+  margin: 0;
+  width: 80%;
+  height: 50px;
+
+  font-size: 2rem;
+  font-family: "Rajdhani", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+header > div {
+  width: 20%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: stretch;
+}
+
+header > div > button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 0.125rem solid var(--yellow);
+
+  color: var(--yellow);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header > div > button:hover {
+  background-color: var(--yellow);
+  border-color: var(--blue);
+}
+header > div > button:hover > i {
+  color: var(--blue);
+}
+
+header > div > button > i {
+  color: var(--yellow);
+}
