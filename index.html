@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <header>
+      <h1>Notas</h1>
+      <button id="btn-create">+</button>
+    </header>
+
+    <form class="form--createNote">
+      <input type="text" placeholder="Nueva nota" />
+      <div>
+        <button id="btn-cancel">Descartar</button>
+        <button id="btn-save">Guardar</button>
+      </div>
+    </form>
+
+    <main id="notes">
+      <article>
+        <div>Nota #1 - Crear un nuevo proyecto de programación</div>
+        <button class="btn-delete"></button>
+      </article>
+    </main>
+
     <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>
