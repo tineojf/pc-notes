@@ -176,6 +176,45 @@ header > div > button > i {
 }
 
 /* Note list */
-#notes {
-  background-color: wheat;
+#notes > article {
+  margin: 20px 0;
+  padding: 20px;
+
+  border-radius: 16px;
+  background-color: var(--shadow-green);
+}
+
+#notes > article > div {
+  color: var(--white);
+}
+
+#notes > article > .div--button {
+  text-align: right;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+#notes > article > .div--button > button {
+  padding: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--btn-delete);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#notes > article > .div--button > button > i {
+  color: var(--white);
 }
