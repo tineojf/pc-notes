@@ -1,12 +1,17 @@
 :root {
   --yellow: #efa00b;
   --blue: #1c3144;
+  --shadow: #f7c364;
+  --btn-delete: #ce2d4f;
+  --btn-save: #11a3d0;
+  --white: #fff;
 }
 
 * {
   min-width: 0;
   font: inherit;
   color: var(--blue);
+  font-family: "Rajdhani", sans-serif;
 }
 
 *,
@@ -43,7 +48,6 @@ p {
 }
 
 /* Header */
-
 header {
   display: flex;
   flex-direction: row;
@@ -59,7 +63,6 @@ header > h1 {
   height: 50px;
 
   font-size: 2rem;
-  font-family: "Rajdhani", sans-serif;
 
   display: flex;
   flex-direction: row;
@@ -113,4 +116,60 @@ header > div > button:hover > i {
 
 header > div > button > i {
   color: var(--yellow);
+}
+
+/* Form Create note */
+.form--createNote {
+  margin: 20px 0;
+  padding: 20px;
+
+  border-radius: 16px;
+  background-color: var(--shadow);
+}
+
+.form--createNote > textarea {
+  margin-bottom: 12px;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+
+  border-radius: 18px;
+  overflow-y: auto;
+  font-size: 1rem;
+  border: none;
+  resize: none;
+}
+
+.form--createNote > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.form--createNote > div > button {
+  margin: 0 12px;
+  padding: 10px 20px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form--createNote > div > button:nth-child(1) {
+  color: var(--white);
+  background-color: var(--btn-delete);
+}
+
+.form--createNote > div > button:nth-child(2) {
+  color: var(--white);
+  background-color: var(--btn-save);
+}
+
+.form--createNote > div > button:hover {
+  filter: brightness(1.1);
 }
