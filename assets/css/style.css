@@ -1,7 +1,8 @@
 :root {
   --yellow: #efa00b;
   --blue: #1c3144;
-  --shadow: #f7c364;
+  --shadow-yellow: #f7c364;
+  --shadow-green: #6e9075;
   --btn-delete: #ce2d4f;
   --btn-save: #11a3d0;
   --white: #fff;
@@ -124,7 +125,7 @@ header > div > button > i {
   padding: 20px;
 
   border-radius: 16px;
-  background-color: var(--shadow);
+  background-color: var(--shadow-yellow);
 }
 
 .form--createNote > textarea {
@@ -172,4 +173,9 @@ header > div > button > i {
 
 .form--createNote > div > button:hover {
   filter: brightness(1.1);
+}
+
+/* Note list */
+#notes {
+  background-color: wheat;
 }
