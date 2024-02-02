@@ -120,7 +120,7 @@ header > div > button > i {
 
 /* Form Create note */
 .form--createNote {
-  display: none;
+  /* display: none; */
   margin: 20px 0;
   padding: 20px;
 
