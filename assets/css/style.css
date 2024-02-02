@@ -2,7 +2,7 @@
   --yellow: #efa00b;
   --blue: #1c3144;
   --shadow-yellow: #f7c364;
-  --shadow-blue: #41739F;
+  --shadow-blue: #41739f;
   --btn-delete: #ce2d4f;
   --btn-save: #11a3d0;
   --white: #fff;
@@ -99,28 +99,28 @@ header > div > button {
 
   font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 50%;
-  border: 0.125rem solid var(--yellow);
 
-  color: var(--yellow);
-  background-color: transparent;
+  border-radius: 50%;
+  border: 0.125rem solid var(--white);
+  background-color: var(--yellow);
   cursor: pointer;
 }
 
 header > div > button:hover {
-  background-color: var(--yellow);
-  border-color: var(--blue);
+  border-color: var(--yellow);
+  background-color: transparent;
 }
 header > div > button:hover > i {
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 header > div > button > i {
-  color: var(--yellow);
+  color: var(--white);
 }
 
 /* Form Create note */
 .form--createNote {
+  display: none;
   margin: 20px 0;
   padding: 20px;
 
