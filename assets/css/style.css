@@ -2,7 +2,7 @@
   --yellow: #efa00b;
   --blue: #1c3144;
   --shadow-yellow: #f7c364;
-  --shadow-green: #6e9075;
+  --shadow-blue: #41739F;
   --btn-delete: #ce2d4f;
   --btn-save: #11a3d0;
   --white: #fff;
@@ -181,7 +181,7 @@ header > div > button > i {
   padding: 20px;
 
   border-radius: 16px;
-  background-color: var(--shadow-green);
+  background-color: var(--shadow-blue);
 }
 
 #notes > article > div {
