@@ -9,6 +9,8 @@ const btnSave = document.querySelector('#btn-save');
 
 const mainNotes = document.querySelector('#notes');
 
+const btnDelete = document.querySelectorAll('.btn-delete');
+
 btnCreate.addEventListener('click', () => {
   if (formCreate.style.display === 'none') {
     formCreate.style.display = 'block';
@@ -41,6 +43,12 @@ btnSave.addEventListener('click', (e) => {
 
     // Add to container
     mainNotes.prepend(newNote);
+
+    // Add event listener to delete button
+    const newBtnDelete = newNote.querySelector('.btn-delete');
+    newBtnDelete.addEventListener('click', () => {
+      newNote.remove();
+    });
   } else {
     alert('No puedes guardar una nota vacía.');
   }
