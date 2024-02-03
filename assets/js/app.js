@@ -9,8 +9,6 @@ const btnSave = document.querySelector('#btn-save');
 
 const mainNotes = document.querySelector('#notes');
 
-const btnDelete = document.querySelectorAll('.btn-delete');
-
 btnCreate.addEventListener('click', () => {
   if (formCreate.style.display === 'none') {
     formCreate.style.display = 'block';
@@ -28,7 +26,17 @@ btnCancel.addEventListener('click', (e) => {
 
 btnSave.addEventListener('click', (e) => {
   e.preventDefault();
+  saveNote();
+});
 
+textTareaNote.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    saveNote();
+  }
+});
+
+function saveNote() {
   const note = textTareaNote.value;
   if (note) {
     textTareaNote.value = '';
@@ -52,4 +60,4 @@ btnSave.addEventListener('click', (e) => {
   } else {
     alert('No puedes guardar una nota vacía.');
   }
-});
+}
