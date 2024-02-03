@@ -39,6 +39,7 @@ textTareaNote.addEventListener('keypress', (e) => {
 function saveNote() {
   const note = textTareaNote.value;
   if (note) {
+    // Clear textarea
     textTareaNote.value = '';
     formCreate.style.display = 'none';
 
