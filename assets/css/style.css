@@ -218,3 +218,41 @@ header > div > button > i {
 #notes > article > .div--button > button > i {
   color: var(--white);
 }
+
+/* Media query tablet */
+@media (min-width: 768px) {
+  body {
+    padding: 60px;
+  }
+
+  header > h1 {
+    font-size: 3rem;
+  }
+
+  header > div > button {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+  }
+
+  header > div > button > i {
+    font-size: 2rem;
+  }
+
+  .form--createNote > textarea {
+    font-size: 1.5rem;
+  }
+
+  .form--createNote > div > button {
+    font-size: 1.5rem;
+    margin: 0 28px;
+  }
+
+  #notes > article > div {
+    font-size: 1.5rem;
+  }
+
+  #notes > article > .div--button > button {
+    font-size: 1.5rem;
+  }
+}
