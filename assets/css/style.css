@@ -256,3 +256,70 @@ header > div > button > i {
     font-size: 1.5rem;
   }
 }
+
+/* Media query desktop */
+@media (min-width: 1024px) {
+  body {
+    padding: 90px;
+  }
+
+  body > header {
+    margin: 0 0 40px;
+  }
+
+  header > h1 {
+    font-size: 3.5rem;
+  }
+
+  header > div > button {
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+  }
+
+  header > div > button > i {
+    font-size: 3rem;
+  }
+
+  body > main {
+    margin: 40px 0;
+  }
+
+  .form--createNote > textarea {
+    font-size: 2rem;
+  }
+
+  .form--createNote > div > button {
+    font-size: 2rem;
+    margin: 0 36px;
+  }
+
+  #notes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  #notes > article {
+    margin: 20px 0;
+    padding: 20px;
+
+    width: 400px;
+    height: 175px;
+    border-radius: 16px;
+    background-color: var(--shadow-blue);
+
+    overflow-y: auto;
+  }
+
+  #notes > article > div {
+    font-size: 1.5rem;
+  }
+
+  #notes > article > .div--button > button {
+    font-size: 2rem;
+  }
+}
